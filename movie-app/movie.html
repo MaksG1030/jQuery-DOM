@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie App</title>
+    <link rel="stylesheet" href="app.css">
+</head>
+<body>
+    <div class="container p-2">
+        <h1 class="display-5">Moive App Rating</h1>
+        <form class="movie-form">
+          <div class="form-group">
+            <label for="movie-title">Moive Title</label>
+            <input minlength="2" type="text" class="form-control" id="movie-title" />
+          </div>
+          <div class="form-group">
+            <label for="rate">Rating</label>
+            <input type="number" min="0" max="10" class="form-control" id="rate" aria-describedby="rate" />
+            <small id="rate" class="form-text text-muted">I won't judge your rating</small>
+          </div>
+          <button type="submit" class="btn btn-primary">Rate it!</button>
+        </form>
+      </div>
+  
+      <table class="table table-hover">
+        <thead>
+          <tr>
+            <th scope="col">Title</th>
+            <th scope="col">Rating</th>
+            <th scope="col">Delete</th>
+          </tr>
+        </thead>
+        <tbody class="movie-body">
+          <!-- <tr>
+            <th scope="row">Test title</th>
+            <td>10</td>
+            <td><button type="button" class="btn btn-danger">Delete</button></td>
+          </tr> -->
+        </tbody>
+      </table>
+  
+   
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="movies.js"></script>
+</body>
+</html>
